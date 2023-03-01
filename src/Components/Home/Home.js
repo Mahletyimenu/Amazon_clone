@@ -7,24 +7,23 @@ const Home = () => {
 
     const Banners = [
         {
-          img:'https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg',
+            img: "https://m.media-amazon.com/images/I/61excEMCTqL._SX3000_.jpg",
         },
         {
-          img: "https://m.media-amazon.com/images/I/61FJZ0nk3ML._SX3000_.jpg",
+            img:'https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg',
         },
         {
-          img: "https://m.media-amazon.com/images/I/71KuCM0tOhL._SX3000_.jpg",
+            img: "https://m.media-amazon.com/images/I/61FJZ0nk3ML._SX3000_.jpg",
         },
         {
-          img: "https://m.media-amazon.com/images/I/61KUup51rjL._SX1500_.jpg",
+            img: "https://m.media-amazon.com/images/I/71KuCM0tOhL._SX3000_.jpg",
         },
         {
-          img: "https://m.media-amazon.com/images/I/51+9uPXVdNL._SX1500_.jpg",
+            img: "https://m.media-amazon.com/images/I/61KUup51rjL._SX1500_.jpg",
         },
         {
-          img: "https://m.media-amazon.com/images/I/61excEMCTqL._SX3000_.jpg",
+            img: "https://m.media-amazon.com/images/I/51+9uPXVdNL._SX1500_.jpg",
         },
-      
     ];
 
     const [index, setindex] = useState(0);

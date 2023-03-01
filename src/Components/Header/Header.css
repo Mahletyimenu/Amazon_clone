@@ -1,6 +1,7 @@
 Link{
     text-decoration: none;
 }
+
 .header{
     height: 60px;
     display: flex;
@@ -10,29 +11,34 @@ Link{
     top:0;
     z-index: 100;
 }
+
 .header_logo{
     width: 100px;
     object-fit: contain;
     margin: 0 20px;
     margin-top: 10px;
 }
+
 .header_searchIcon{
     padding: 5px;
     height: 22px !important;
     background-color: #cd9842;
 }
+
 .header_search{
     display: flex;
     flex: 1;
     align-items: center;
     border-radius: 24px;
 }
+
 .header_searchInput{
     height: 11px;
     padding: 10px;
     border: none;
     width: 100%;
 }
+
 .header_option{
     display: flex;
     flex-direction: column;
@@ -40,30 +46,25 @@ Link{
     margin-right: 10px;
     color: #fff;
 }
+
 .header_nav{
     display: flex;
     justify-content: space-evenly;
 }
+
 .header_optionLineOne{
     font-size: 10px;
-
 }
+
 .header_optionLineTwo{
     font-size: 13px;
     font-weight: 800;
 }
-/* .header_optionBasket{
-    display: flex;
-    align-items: center;
-    color: white;
-}
-.header_basketCount{
-    margin-left: 10px;
-    margin-right: 10px;
-} */
+
 .header_clearlink{
     text-decoration: none;
 }
+
 .header_cart {
     position: relative;
     cursor: pointer;
@@ -71,6 +72,7 @@ Link{
     color: #fff;
     padding-right: 10px;
 }
+
 .header_cart_number {
     position: absolute;
     top: -5px;
@@ -78,6 +80,7 @@ Link{
     font-weight: bold;  
     color: #cd9842;
 }
+
 .header_cart_img {
     width: 30px;
     height: 30px;
