@@ -17,3 +17,15 @@
     margin-left: 5px;  
     margin-right: 5px;
 }
+
+.banner_lefticon,.banner_righticon {
+  position: absolute;
+  top: 30%;
+  cursor: pointer;
+}
+.banner_lefticon {
+  left: 10px;
+}
+.banner_righticon {
+  right: 10px;
+}

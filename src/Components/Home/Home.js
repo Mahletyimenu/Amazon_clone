@@ -1,17 +1,93 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import Product from '../Product/Product.js';
 import './Home.css';
+import ChevronLeftOutlinedIcon from "@mui/icons-material/ChevronLeftOutlined";
+import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 const Home = () => {
+
+    const Banners = [
+        {
+          img:'https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg',
+        },
+        {
+          img: "https://m.media-amazon.com/images/I/61FJZ0nk3ML._SX3000_.jpg",
+        },
+        {
+          img: "https://m.media-amazon.com/images/I/71KuCM0tOhL._SX3000_.jpg",
+        },
+        {
+          img: "https://m.media-amazon.com/images/I/61KUup51rjL._SX1500_.jpg",
+        },
+        {
+          img: "https://m.media-amazon.com/images/I/51+9uPXVdNL._SX1500_.jpg",
+        },
+        {
+          img: "https://m.media-amazon.com/images/I/61excEMCTqL._SX3000_.jpg",
+        },
+      
+    ];
+
+    const [index, setindex] = useState(0);
+    const [src, setsrc] = useState(Banners[index].img);
+
     return (
         <div>
             <div className='home'>
                 <div className='home_container'>
+                    
                     <img
                     className='home_image'
-                    src='https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg'
+                    src={src}
                     alt=""
                     />
-                
+                    <ChevronLeftOutlinedIcon
+                        sx={{ fontSize: "80px", fontWeight: "200" }}
+                        className="banner_lefticon"
+                        onClick={() => {
+                            if(index > 0){
+                                setindex(index-1);
+                            }else{
+                                setindex(0);
+                            }
+                            setsrc(Banners[index].img);
+                        }}
+                    />
+                    <ChevronRightOutlinedIcon
+                        sx={{ fontSize: "80px", fontWeight: "200" }}
+                        className="banner_righticon"
+                        onClick={() =>  {
+                            if(index < Banners.length-1){
+                                setindex(index+1);
+                            }else{
+                                setindex(Banners.length-1);
+                            }
+                            setsrc(Banners[index].img);
+                        }}
+                    />
+                    <div className="home_row">
+                        <Product
+                            id="4903850"
+                            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
+                            price={243.99}
+                            rating={4}
+                            image="https://m.media-amazon.com/images/I/81w7ej+WBlL._AC_SY200_.jpg"
+                        />
+                        <Product
+                            id="23445930"
+                            title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
+                            price={123.59}
+                            rating={5}
+                            image="https://m.media-amazon.com/images/I/71bSniLIIqL._AC_SY200_.jpg"
+                        />
+                        <Product
+                            id="3254354345"
+                            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
+                            price={48.22}
+                            rating={4}
+                            image="https://m.media-amazon.com/images/I/81IPJqjBjkL._AC_SY200_.jpg"
+                        />
+                    </div>
+        
                     <div className='home_row'>
                         <Product
                             id="12321341"
