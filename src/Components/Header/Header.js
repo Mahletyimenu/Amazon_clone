@@ -5,7 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import cart from './cart.png';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../../State/Stateprovider';
-import { auth } from '../../firebase/Firebase';
+import { auth } from '../../firebase/Firebase'; 
 
 const Header = () => {
     const [{ basket, user }, dispatch] = useStateValue();

@@ -10,7 +10,7 @@ import { auth } from './firebase/Firebase';
 import { useStateValue } from './State/Stateprovider';
 
 function App() {
-  const [dispatch] = useStateValue();
+  const [{},dispatch] = useStateValue();
 
   useEffect(() => {
 
